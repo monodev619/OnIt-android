@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.training.onit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".KApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".SplashActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".InfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".TosActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AppInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AccountSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".UseTicketActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".BuyTicketActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".TicketListActivity" android:screenOrientation="portrait" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value=""/>
+
+    </application>
+
+</manifest>

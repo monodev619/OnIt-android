@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.training.onit.BuyTicketActivity">
+
+    <ImageView style="@style/top_logo"/>
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/buy_ticket"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+    <LinearLayout
+
+        android:id="@+id/llStep1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_marginBottom="24dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Please note: 2tickets are require for round trip."
+            />
+
+        <LinearLayout
+            android:id="@+id/llSelectRoute"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_button_height"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/btn_green_sel"
+            >
+            <TextView
+                android:id="@+id/tvRoute"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:hint="SELECT A ROUTE"
+                android:textColorHint="@android:color/white"
+                android:background="@android:color/transparent"
+                />
+            <AutoCompleteTextView
+                android:visibility="gone"
+                android:id="@+id/tvAutoCompleteRoute"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:hint="SELECT A ROUTE"
+                android:textColorHint="@android:color/white"
+                android:background="@android:color/transparent"
+                />
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/arrow_down"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="NUMBER OF TICKETS"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="22sp"
+                />
+            <ImageView
+                android:id="@+id/btnDecrease"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/ic_dec"
+                />
+            <TextView
+                android:id="@+id/tvTicketCount"
+                android:layout_width="40dp"
+                android:layout_height="36dp"
+                android:gravity="center_horizontal"
+                android:text="1"
+                android:textSize="28sp"
+                android:background="@drawable/bg_count"
+                />
+            <ImageView
+                android:id="@+id/btnIncrease"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_inc"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="OR"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="AVG MONTH PASS:(UNLIMITED USE)"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/chkBuyMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="12dp"
+            android:scrollbars="vertical"
+            android:text="Legal\nTerms and conditions detials..."
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_cards"
+            />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnStep1"
+            style="@style/form_button"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_blue_sel"
+            android:text="I AGREE AND CONTINUE"
+            android:textColor="@android:color/white"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/llStep2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_marginBottom="24dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cards"
+            />
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name on card:"
+            />
+        <EditText
+            android:layout_marginTop="4dp"
+            android:id="@+id/edtNameOnCard"
+            style="@style/form_input"
+            android:layout_height="36dp"
+            />
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card Number(no spaces):"
+            />
+        <EditText
+            android:layout_marginTop="4dp"
+            android:id="@+id/edtCardNumber"
+            style="@style/form_input"
+            android:layout_height="36dp"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expiry Date(month/year):"
+            />
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/selMonth"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:drawableRight="@drawable/ic_down"
+                android:background="@drawable/btn_round_sel"
+                android:text="SEP"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/selYear"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:gravity="center"
+                android:drawableRight="@drawable/ic_down"
+                android:background="@drawable/btn_round_sel"
+                android:text="2016"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_ccv"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:text="CVV:"
+                android:textSize="24sp"
+                />
+            <EditText
+                android:id="@+id/edtCVV"
+                style="@style/form_input"
+                android:layout_marginLeft="16dp"
+                android:layout_height="36dp"
+                android:inputType="number"
+                />
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/chkStep2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="ACCEPT TERMS &amp; CONDITIONS"
+            android:textStyle="bold"
+            android:checked="true"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnStep2"
+            style="@style/form_button"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_blue_sel"
+            android:text="CONTINUE"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/llStep3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            style="@style/page_title"
+            android:text="PLEASE CONFIRM"
+            />
+        <TextView
+            android:id="@+id/tvBillInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:text="Route\nBlack Diamond - High River\nType:Single use Qty:14\nTotal:$48.00"
+            />
+
+        <Button
+            android:id="@+id/btnTos"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/btn_round_sel"
+            android:text="Terms &amp; Conditions"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:drawableRight="@drawable/ic_arrow_white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:textAlignment="center"
+            android:text="If you accept the terms and conditions\nclick below."
+            android:textSize="18sp"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnStep3"
+            style="@style/form_button"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_blue_sel"
+            android:text="CONFIRM"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

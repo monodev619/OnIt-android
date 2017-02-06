@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:windowBackground">@drawable/bg_main</item>
+        <item name="android:textColor">@android:color/black</item>
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="form_input" >
+        <item name="android:background">@drawable/dark_gray_rect</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/form_control_height</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <style name="form_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/form_control_height</item>
+    </style>
+
+    <style name="action_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/action_button_height</item>
+        <item name="android:layout_marginTop">@dimen/action_button_margin</item>
+        <item name="android:paddingLeft">@dimen/action_button_padding</item>
+        <item name="android:paddingRight">@dimen/action_button_padding</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/btn_action_sel</item>
+    </style>
+
+    <style name="top_logo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/logo_top</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="page_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+</resources>

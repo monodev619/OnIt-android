@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.training.onit.MainActivity">
+
+    <ImageView style="@style/top_logo"/>
+
+    <LinearLayout
+        android:id="@+id/btnUseTicket"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:background="@drawable/btn_green_sel"
+        >
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/bus"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="USE MY TICKETS"
+            android:textColor="@android:color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/arrow_green"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnBuyTicket"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:background="@drawable/btn_green_sel"
+        >
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/bus"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="BUY MY TICKETS"
+            android:textColor="@android:color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/arrow_green"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        >
+        <LinearLayout
+            android:id="@+id/btnInfo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/action_button_height"
+            android:layout_marginTop="0dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/btn_action_sel"
+            >
+            <ImageView
+                android:layout_width="@dimen/action_arrow_size"
+                android:layout_height="@dimen/action_arrow_size"
+                android:src="@drawable/ic_info_grey"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Information"
+                />
+            <ImageView
+                android:layout_width="@dimen/action_arrow_size"
+                android:layout_height="@dimen/action_arrow_size"
+                android:src="@drawable/ic_arrow_white"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_v_split"
+            />
+
+        <LinearLayout
+            android:id="@+id/btnSetting"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/action_button_height"
+            android:layout_marginTop="0dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/btn_action_sel"
+            >
+            <ImageView
+                android:layout_width="@dimen/action_arrow_size"
+                android:layout_height="@dimen/action_arrow_size"
+                android:src="@drawable/ic_setting"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Settings"
+                />
+            <ImageView
+                android:layout_width="@dimen/action_arrow_size"
+                android:layout_height="@dimen/action_arrow_size"
+                android:src="@drawable/ic_arrow_white"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

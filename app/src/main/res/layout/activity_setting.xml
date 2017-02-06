@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.training.onit.InfoActivity">
+
+    <ImageView style="@style/top_logo"/>
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/setting_icon"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        />
+
+    <TextView
+        style="@style/page_title"
+        android:text="ACCOUNT INFORMATION"
+        />
+    <LinearLayout
+        android:id="@+id/btnAccount"
+        style="@style/action_button"
+        >
+        <ImageView
+            android:layout_width="@dimen/action_icon_size"
+            android:layout_height="@dimen/action_icon_size"
+            android:src="@drawable/ic_user_setting"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:textSize="22sp"
+            android:text="Account Setting"
+            />
+        <ImageView
+            android:layout_width="@dimen/action_arrow_size"
+            android:layout_height="@dimen/action_arrow_size"
+            android:src="@drawable/arrow_white_large"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnTos"
+        style="@style/action_button"
+        >
+        <ImageView
+            android:layout_width="@dimen/action_icon_size"
+            android:layout_height="@dimen/action_icon_size"
+            android:src="@drawable/ic_tos"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:textSize="22sp"
+            android:text="Terms of use"
+            />
+        <ImageView
+            android:layout_width="@dimen/action_arrow_size"
+            android:layout_height="@dimen/action_arrow_size"
+            android:src="@drawable/arrow_white_large"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnAppInfo"
+        style="@style/action_button"
+        >
+        <ImageView
+            android:layout_width="@dimen/action_icon_size"
+            android:layout_height="@dimen/action_icon_size"
+            android:src="@drawable/ic_app_info"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:textSize="22sp"
+            android:text="App Info"
+            />
+        <ImageView
+            android:layout_width="@dimen/action_arrow_size"
+            android:layout_height="@dimen/action_arrow_size"
+            android:src="@drawable/arrow_white_large"
+            />
+    </LinearLayout>
+
+</LinearLayout>

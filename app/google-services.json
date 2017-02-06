@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "663063571270",
+    "project_id": "onit-143012"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663063571270:android:87ea9a519d46cfbb",
+        "android_client_info": {
+          "package_name": "com.training.onit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663063571270-chf5ucsgomv6u2n3781dp57cq86anr0c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.training.onit",
+            "certificate_hash": "74252EE320248BD1AE28B620678F466D2B8363D3"
+          }
+        },
+        {
+          "client_id": "663063571270-n2g8s95b80c5qvsduevq5s06e7slkh72.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIR6MpdUVa2XIGXjn3cnVgDYs6s-bv_NM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

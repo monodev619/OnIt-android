@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.training.onit.UseTicketActivity">
+
+    <ImageView style="@style/top_logo"/>
+
+    <RelativeLayout
+        android:id="@+id/btnConfirmUse"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/bg_ticket"
+        android:layout_gravity="center_horizontal"
+        >
+        <TextView
+            android:id="@+id/tvRouteName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="ROUTE 503"
+            android:textStyle="bold"
+            android:textColor="#F7C12F"
+            android:textSize="30sp"
+            />
+        <TextView
+            android:id="@+id/tvTicketCount"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="90dp"
+            android:text="1"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:gravity="center"
+            android:background="@drawable/green_circle"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <TextView
+            android:id="@+id/tvStartPos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="BLACK DIAMOND"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tvTicketCount"
+            />
+        <TextView
+            android:id="@+id/tvEndPos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="OKOTOKS"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tvStartPos"
+            />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/page_title"
+        android:layout_marginTop="8dp"
+        android:text="ADD ANOTHER USER"
+        android:textSize="18sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/btnIncrease"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/grey_overlay"
+            android:background="@drawable/ic_add_user"
+            android:layout_gravity="center_horizontal"
+            />
+        <Button
+            android:id="@+id/btnDecrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
